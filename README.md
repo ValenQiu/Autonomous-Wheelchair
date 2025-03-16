@@ -54,6 +54,19 @@ lrwxrwxrwx 1 root root 7 Jan  3 16:47 /dev/oradar1 -> ttyACM0
 ```
 输入其他设备的编号（oradar2和oradar3）可查看其余两个设备的端口编号。
 
+## 2. 开机自启动ROS程序
+参考链接： https://blog.csdn.net/qq_46227775/article/details/118657435
+### 2.1. 新建开机要启动的程序脚本
+脚本文件命名为`m.sh`，文件内容如下：
+```
+#! /bin/bash
+
+source /home/pi/oradar_ws/devel/setup.bash
+
+gnome-terminal -x bash -c "roslaunch laser_test wheelchair.launch"
+wait
+exit 0
+```
 ### 2.2. 给脚本权限
 在终端运行：
 ```
