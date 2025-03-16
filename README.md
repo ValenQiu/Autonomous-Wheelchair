@@ -53,3 +53,16 @@ ll /dev/oradar1
 lrwxrwxrwx 1 root root 7 Jan  3 16:47 /dev/oradar1 -> ttyACM0
 ```
 输入其他设备的编号（oradar2和oradar3）可查看其余两个设备的端口编号。
+
+### 2.2. 给脚本权限
+在终端运行：
+```
+sudo chmod 777 m.sh
+```
+
+### 2.3. 添加自启动脚本
+在终端输入：
+```
+gnome-session-properties
+```
+随后在弹出的窗口中添加刚才编辑的m.sh文件，重启，测试是否开机自启动成功。
