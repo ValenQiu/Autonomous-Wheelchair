@@ -7,7 +7,7 @@
 
 ### Install the Oradar Lidar Driver
 
-To install the Oradar Lidar driver, navigate to the [`src`](../src) directory, then go to the [`oradar_ros`](../src/oradar_ros/) folder[^1]. Open a terminal in this folder and run the following commands:
+To install the Oradar Lidar driver, navigate to the [`src`](../src) directory, then go to the [`oradar_ros`](../src/oradar_ros/) folder. Open a terminal in this folder and run the following commands:
 
 ```bash
 mkdir build
@@ -79,7 +79,7 @@ lrwxrwxrwx 1 root root 7 Jan  3 16:47 /dev/oradar1 -> ttyACM0
 Repeat this for the other devices (`oradar2` and `oradar3`) to view their port numbers.
 
 #### Reference
-[^1] YahBoom MS200 Lidar Repository: http://www.yahboom.net/study/MS200
+> YahBoom MS200 Lidar Repository: http://www.yahboom.net/study/MS200
 
 > Serial Port Binding: [`pdf`](../Supplements/Oradar%20Lidar/2、语音控制模块端口绑定.pdf)
 
